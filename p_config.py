@@ -8,8 +8,8 @@ import pathlib
 # initialize the base path to the *new* directory that will contain 
 # our images after computing the training and testing split
 BASE_PATH = "flower_photos"
-RANDOM_SEED = 2021
-EPOCHS = 1
+RANDOM_SEED = 1
+EPOCHS = 5
 FLOWERS_ORIG_DIR = pathlib.Path.cwd() / 'flower_photos'
 
 # define the names of the training, testing, and validation
@@ -31,8 +31,8 @@ IMG_WIDTH = 180
 LE_PATH = os.path.sep.join(["output", "le.cpickle"])
 BASE_CSV_PATH = "output"
 
-# set the path to the serialized model after training
-MODEL_PATH = os.path.sep.join(["output", "model.cpickle"])
+# The '.h5' extension indicates that the model should be saved to HDF5.
+MODEL_PATH = os.path.sep.join(["output", "model.h5"])
 
 
 

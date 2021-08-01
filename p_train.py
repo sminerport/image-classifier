@@ -202,12 +202,10 @@ for i in range(25):
 # show image
 plt.show()
 
-# serialize the model to disk
+# Save the entire model to a HDF5 file.
+# The '.h5' extension indicates that the model should be saved to HDF5.
 print("[INFO] saving model...")
-f = open(FLOWERS_ORIG_DIR / config.MODEL_PATH, "wb")
-f.write(pickle.dumps(model))
-f.close()
-
+model.save(FLOWERS_ORIG_DIR / config.MODEL_PATH, "wb")
 
     
 
