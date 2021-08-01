@@ -2,6 +2,8 @@
 
 github repository: https://github.com/sminerport/image-classifier
 
+Please consult the images directory for examples of successful program execution
+
 To run the program simply run the `p_build_dataset.py` script, which in turn runs the `p_extract_features.py` and `p_train.py` scripts.
 
 Alternatively, once the `p_build_dataset.py` script has been run, the `p_train.py` file can be run by itself to re-train the model and output different images if the `RANDOM_SEED` value is updated in the `p_config.py` file.

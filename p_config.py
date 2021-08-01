@@ -8,7 +8,7 @@ import pathlib
 # initialize the base path to the *new* directory that will contain 
 # our images after computing the training and testing split
 BASE_PATH = "flower_photos"
-RANDOM_SEED = 1
+RANDOM_SEED = 2021
 EPOCHS = 5
 FLOWERS_ORIG_DIR = pathlib.Path.cwd() / 'flower_photos'
 
